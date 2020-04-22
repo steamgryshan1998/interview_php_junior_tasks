@@ -1,7 +1,7 @@
 <?php
 // You have a list of stock prices for N days(in the form of an array), 
 // you need to determine the maximum profit for one purchase and sale operation 
-    function MaxProfit(&$arr){//
+    function MaxProfit(&$arr){//passing value by reference
         $max = NULL;//initialization of variable
         for($i = 1; $i < count($arr); $i++){//going alone the array(list of stock prices)
             for($j = $i-1; $j >= 0; $j--){//going back to get the values of difference
